@@ -1,91 +1,95 @@
-# Site Leriko Sàrl — version statique Vercel-ready
+# Leriko Sàrl — site statique original, prêt pour GitHub → Vercel
 
-Ce dossier contient un site vitrine statique prêt à être poussé sur GitHub puis déployé sur Vercel.
+Ce dossier contient une **refonte visuelle plus marquée** du site Leriko Sàrl, pensée pour sortir des codes trop classiques du secteur.
 
-## Structure
+## Direction créative
 
-- `index.html` : page d'accueil
-- `services/` : vue globale des services
-- `particuliers/` : offre dédiée aux privés
-- `professionnels/` : offre dédiée aux professionnels
-- `tarifs/` : page tarifs / devis
+Le design suit une logique :
+
+- **premium local**
+- **univers alpin / entretien / terrain**
+- **ambiance sombre + accents dorés / verts**
+- **structure plus mémorable qu’un site artisanal standard**
+- **mise en avant de la conversion** : appel, WhatsApp, réservation, contact
+
+## Pages incluses
+
+- `index.html` : accueil
+- `services/` : détail des prestations
+- `particuliers/` : offre pour les privés
+- `professionnels/` : offre pour les professionnels
+- `tarifs/` : cadrage tarifaire
 - `galerie/` : galerie avant / après
-- `partenaires/` : section partenaires
-- `reservation/` : formulaire de réservation relié à WhatsApp
+- `partenaires/` : logos et collaborations
+- `reservation/` : formulaire relié à WhatsApp
 - `contact/` : contact
-- `mentions-legales/`, `politique-confidentialite/`, `conditions-generales/`
-- `assets/css/styles.css` : styles globaux
-- `assets/js/main.js` : menu mobile et petits comportements
+- `mentions-legales/`
+- `politique-confidentialite/`
+- `conditions-generales/`
+
+## Fichiers clés
+
+- `assets/css/styles.css` : design global
+- `assets/js/main.js` : menu mobile
 - `assets/js/forms.js` : formulaires WhatsApp
-- `assets/images/` : logo, favicon, galerie et logos partenaires
+- `assets/images/` : logo, galerie, visuel, partenaires
 
 ## Ce qui est déjà prêt
 
-- design responsive
-- structure SEO locale
-- pages privées / professionnels séparées
-- réservation via WhatsApp
+- site **100 % statique**
+- compatible **GitHub + Vercel**
+- responsive mobile / tablette / desktop
+- séparation **privés / professionnels**
 - galerie avant / après
 - partenaires
-- mentions légales / confidentialité / conditions générales
-- structure compatible Vercel sans build ni dépendances Node
+- pages légales
+- réservation par WhatsApp
+- structure SEO de base
+- `robots.txt`
 
-## Données intégrées
+## Éléments à remplacer avant publication finale
 
-- entreprise : Leriko Sàrl
-- adresse : Chemin du Carroz Delay 8, 1264 St-Cergue
-- téléphone : 076 733 24 23
-- registre : CH-550.1.249.707-6
-- UID : CHE-430.702.480
-
-## Points à remplacer avant mise en ligne finale
-
-1. **Vraies photos galerie**
-   - remplacer les fichiers dans `assets/images/gallery/`
+1. **Photos réelles**
+   - remplacer `assets/images/gallery/*`
 
 2. **Vrais logos partenaires**
-   - remplacer les fichiers dans `assets/images/partners/`
+   - remplacer `assets/images/partners/*`
 
-3. **Textes légaux**
-   - relire les pages légales selon le fonctionnement réel du client
+3. **Tarifs réels**
+   - affiner `tarifs/index.html` selon la grille du client
 
-4. **Tarifs**
-   - la page `tarifs/` est structurée mais volontairement prudente
-   - valider la formulation exacte à publier
+4. **Mentions légales finales**
+   - relire les pages légales selon les informations officielles du client
 
-5. **Email / autres réseaux**
-   - si le client a une adresse email officielle ou d'autres canaux, les ajouter dans `contact/index.html`
+5. **Éventuel email pro**
+   - à ajouter si le client dispose d’une adresse officielle
 
 ## Déploiement GitHub → Vercel
 
-### 1. Mettre le site sur GitHub
-- créer un nouveau repository GitHub
-- envoyer tout le contenu de ce dossier dans le repository
-- vérifier que `index.html` est bien à la racine du dépôt
+### 1. GitHub
+- créer un dépôt GitHub
+- envoyer tout le contenu de ce dossier dans le dépôt
+- vérifier que `index.html` est bien présent à la racine
 
-### 2. Déployer sur Vercel
-- se connecter à Vercel
+### 2. Vercel
+- ouvrir Vercel
 - cliquer sur **Add New Project**
-- importer le repository GitHub
-- Vercel détectera automatiquement qu’il s’agit d’un site statique
-- lancer le déploiement
+- importer le dépôt GitHub
+- laisser Vercel déployer le site comme **static site**
 
-### 3. Ajouter le domaine
+### 3. Domaine
 - dans Vercel, ouvrir le projet
 - aller dans **Settings > Domains**
 - ajouter le domaine final
-- pointer ensuite le DNS selon les instructions Vercel
+- suivre les instructions DNS de Vercel
 
-## Fonctionnement du formulaire
+## Formulaires
 
-Le formulaire ne stocke pas les données sur un serveur.
-Il ouvre WhatsApp avec un message pré-rempli au numéro :
+Les formulaires n’enregistrent pas les données dans une base.
+Ils ouvrent **WhatsApp** avec un message pré-rempli au numéro :
 
 `076 733 24 23`
 
-Si vous voulez plus tard un vrai envoi email ou une base CRM, il faudra connecter un backend ou un service externe.
+## Remarque
 
-## Remarque importante
-
-Le fichier `assets/images/leriko-flyer-reference.png` contient l'image de référence transmise par le client.  
-Il sert uniquement de base visuelle et n’est pas affiché sur le site.
+Le fichier `assets/images/leriko-flyer-reference.png` est utilisé comme **visuel de marque** dans la maquette actuelle.
