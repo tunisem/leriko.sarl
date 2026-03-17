@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Réservation | Leriko Sàrl</title>
+  <meta name="description" content="Réservez une intervention ou demandez un devis auprès de Leriko Sàrl via un formulaire simple relié à WhatsApp." />
+  <meta name="theme-color" content="#1b6f96" />
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml" />
+  <link rel="preload" href="/assets/images/logo-leriko.svg" as="image" type="image/svg+xml" />
+  <link rel="stylesheet" href="/assets/css/styles.css" />
+  
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "LocalBusiness", "name": "Leriko Sàrl", "telephone": "076 733 24 23", "address": {"@type": "PostalAddress", "streetAddress": "Chemin du Carroz Delay 8", "postalCode": "1264", "addressLocality": "St-Cergue", "addressCountry": "CH"}, "areaServed": "Saint-Cergue et alentours", "description": "Conciergerie, entretien, nettoyage, petits travaux, dépannage rapide et espaces verts pour privés et professionnels."}</script>
+</head>
+<body>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/">
+        <img src="/assets/images/logo-leriko.svg" alt="Logo Leriko Sàrl" />
+        <div class="brand-text">Votre partenaire local · travail soigné · intervention sur mesure</div>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" data-menu-toggle>☰</button>
+      <nav class="nav" aria-label="Navigation principale" data-nav>
+        <a href="/">Accueil</a>
+<a href="/services/">Services</a>
+<a href="/particuliers/">Privés</a>
+<a href="/professionnels/">Professionnels</a>
+<a href="/tarifs/">Tarifs</a>
+<a href="/galerie/">Galerie</a>
+<a href="/reservation/" aria-current="page">Réservation</a>
+<a href="/contact/">Contact</a>
+<a class="nav-cta" href="/reservation/">Réserver une intervention</a>
+      </nav>
+    </div>
+  </header>
+  <main id="contenu">
+
+<section class="subhero">
+  <div class="container">
+    <div class="subhero-panel">
+      <div class="breadcrumbs"><a href="/">Accueil</a> <span>•</span> <span>Réservation</span></div>
+      <span class="eyebrow">Réservation</span>
+      <h1>Réserver une intervention</h1>
+      <p>Le formulaire de réservation est pensé pour simplifier la prise de contact : quelques champs essentiels, puis ouverture directe de WhatsApp avec une demande structurée.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container contact-grid">
+    <div class="form-card">
+      <span class="eyebrow">Réservation / devis</span>
+      <h2 style="margin-top:0">Décrivez votre besoin</h2>
+      <p class="lead">Remplissez les informations utiles. En validant, un message WhatsApp complet s’ouvre automatiquement.</p>
+      <form data-whatsapp-form data-form-kind="reservation" data-whatsapp-phone="41767332423">
+        <div class="form-grid">
+          <div class="field">
+            <label for="clientType">Type de client</label>
+            <select id="clientType" name="clientType" required>
+              <option value="">Choisir</option>
+              <option>Privé</option>
+              <option>Professionnel</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="service">Service demandé</label>
+            <select id="service" name="service" required>
+              <option value="">Choisir un service</option>
+              <option>Conciergerie, maintenance & intendance</option><option>Nettoyage & entretien</option><option>Multiservice & petits travaux</option><option>Dépannage rapide</option><option>Entretien d'espaces verts</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="name">Nom complet</label>
+            <input id="name" name="name" type="text" required placeholder="Votre nom" />
+          </div>
+          <div class="field">
+            <label for="company">Entreprise (optionnel)</label>
+            <input id="company" name="company" type="text" placeholder="Nom de l’entreprise" />
+          </div>
+          <div class="field">
+            <label for="phone">Téléphone</label>
+            <input id="phone" name="phone" type="tel" required placeholder="Votre numéro" />
+          </div>
+          <div class="field">
+            <label for="email">Email (optionnel)</label>
+            <input id="email" name="email" type="email" placeholder="Votre email" />
+          </div>
+          <div class="field">
+            <label for="date">Date souhaitée</label>
+            <input id="date" name="date" type="date" />
+          </div>
+          <div class="field">
+            <label for="frequency">Fréquence / budget</label>
+            <input id="frequency" name="frequency" type="text" placeholder="Ponctuel, régulier, abonnement…" />
+          </div>
+          <div class="field full">
+            <label for="location">Adresse / lieu d’intervention</label>
+            <input id="location" name="location" type="text" required placeholder="Adresse ou commune" />
+          </div>
+          <div class="field full">
+            <label for="message">Détails de la demande</label>
+            <textarea id="message" name="message" rows="6" required placeholder="Expliquez le besoin, l’état actuel, le contexte et toute information utile."></textarea>
+          </div>
+        </div>
+        <div class="form-actions">
+          <button class="button" type="submit">Envoyer via WhatsApp</button>
+          <a class="button-secondary" href="tel:+41767332423">Appeler directement</a>
+        </div>
+        <p class="helper">Envoi via WhatsApp pour accélérer le premier contact. Aucun paiement en ligne n’est demandé sur cette page.</p>
+        <div class="notice" data-form-notice></div>
+      </form>
+    </div>
+    <div>
+      <div class="details-card">
+        <span class="eyebrow">Coordonnées</span>
+        <h3>Contact rapide</h3>
+        <ul class="info-list">
+          <li><strong>Téléphone</strong><a href="tel:+41767332423">076 733 24 23</a></li>
+          <li><strong>WhatsApp</strong><a href="https://wa.me/41767332423" target="_blank" rel="noopener noreferrer">Écrire maintenant</a></li>
+          <li><strong>Adresse</strong><a href="https://www.google.com/maps/search/?api=1&query=Chemin+du+Carroz+Delay+8%2C+1264+St-Cergue" target="_blank" rel="noopener noreferrer">Chemin du Carroz Delay 8, 1264 St-Cergue</a></li>
+        </ul>
+      </div>
+      <div class="details-card">
+        <span class="eyebrow">Pour bien préparer la demande</span>
+        <h3>Ce qu’il est utile de préciser</h3>
+        <ul class="list">
+          <li>Le type exact de besoin</li>
+          <li>L’adresse ou la commune</li>
+          <li>La date ou le délai souhaité</li>
+          <li>Le niveau d’urgence</li>
+          <li>Des photos si nécessaire via WhatsApp</li>
+        </ul>
+      </div>
+      <div class="details-card">
+        <span class="eyebrow">Conseil conversion</span>
+        <h3>Une réservation sans friction</h3>
+        <p>Le choix du canal WhatsApp évite les formulaires trop froids et réduit la perte de prospects. C’est particulièrement efficace pour une entreprise de proximité.</p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+  
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="/assets/images/logo-leriko.svg" alt="Leriko Sàrl" />
+        <p>Entreprise locale basée à Saint-Cergue, orientée conciergerie, entretien, petits travaux, dépannage et espaces verts pour privés et professionnels.</p>
+        <p class="footer-meta"><strong>Tél.</strong> <a href="tel:+41767332423">076 733 24 23</a><br><strong>Adresse</strong> <a href="https://www.google.com/maps/search/?api=1&query=Chemin+du+Carroz+Delay+8%2C+1264+St-Cergue" target="_blank" rel="noopener noreferrer">Chemin du Carroz Delay 8, 1264 St-Cergue</a></p>
+      </div>
+      <div>
+        <h3>Navigation</h3>
+        <div class="footer-list"><a href="/services/">Services</a><a href="/particuliers/">Privés</a><a href="/professionnels/">Professionnels</a><a href="/tarifs/">Tarifs</a></div>
+      </div>
+      <div>
+        <h3>Informations</h3>
+        <div class="footer-list"><a href="/mentions-legales/">Mentions légales</a><a href="/politique-confidentialite/">Confidentialité</a><a href="/conditions-generales/">Conditions générales</a><a href="https://wa.me/41767332423" target="_blank" rel="noopener noreferrer">WhatsApp</a></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>© <span data-year></span> Leriko Sàrl. Tous droits réservés.</div>
+      <div>Registre du commerce CH-550.1.249.707-6 · UID CHE-430.702.480</div>
+    </div>
+  </div>
+</footer>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/forms.js"></script>
+</body>
+</html>

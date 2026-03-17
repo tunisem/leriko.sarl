@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#eefcf8"/><stop offset="100%" stop-color="#eef7ff"/></linearGradient></defs>
+<rect width="640" height="420" rx="28" fill="url(#g)"/>
+<rect x="34" y="34" width="124" height="46" rx="18" fill="#1b6f96"/>
+<text x="96" y="63" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#fff">APRÈS</text>
+<rect x="56" y="132" width="528" height="220" rx="26" fill="#ffffff" stroke="#d8e4e8" stroke-width="4"/>
+<rect x="86" y="160" width="144" height="28" rx="10" fill="#dce8ef"/>
+<rect x="86" y="206" width="232" height="18" rx="9" fill="#edf3f7"/>
+<rect x="86" y="238" width="196" height="18" rx="9" fill="#edf3f7"/>
+<rect x="86" y="270" width="256" height="18" rx="9" fill="#edf3f7"/>
+<circle cx="472" cy="242" r="56" fill="#eff6ff"/>
+<path d="M448 244l18 18 34-46" fill="none" stroke="#2ea58b" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="56" y="382" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" fill="#1d3557">Bureaux & commerces</text>
+<text x="56" y="404" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#57717b">Nettoyage régulier</text>
+</svg>
